@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/historia.html -->
+<html lang="en" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    
+
+<link rel="stylesheet" type="text/css" href="./Pagina Principal_files/style.css" title="style"></head>
+
+<body id="bodyhistoria">
+
+
+<header>
+    <div id="inicio">© 2023. Mercedes by Viktorio Burchin</div>
+</header>  
+
+
+<!-- Dentro del nav pondre las referencias del menu para levarnos a las otras sub paginas.-->
+<nav>
+    <ul class="menu">
+		<li id="logo"> <a href="http://127.0.0.1:5500/index.html"><img src="./Pagina Principal_files/Mercedes-Logo.svg.png"></a></li>
+		<li> <a href="http://127.0.0.1:5500/catalogo.html">Catalogo</a> </li>
+		<li> <a href="http://127.0.0.1:5500/historia.html">Historia</a></li>
+		<li>  <a href="http://127.0.0.1:5500/contacto.html">Contacto</a> </li>
+
+	</ul>
+</nav>
+<p>Nuevo sistema de denominación de clase de Mercedes Benz <br>
+    Clase A: Hatchback. <br>
+    Clase B: coche polivalente (MPV). <br>
+    Clase C: Berlina, Estate y Coupé. <br>
+    Clase CL: Coupé de lujo. <br>
+    Clase CLA: Coupé de 4 puertas. <br>
+    Clase CLS: Coupé de 4 puertas. <br>
+    Clase E: Berlina, Estate, Coupé y Cabriolet. <br>
+    Clase G: Coche utilitario deportivo (SUV). <br>
+    Clase GL: Coche utilitario deportivo (SUV). <br>
+    Clase GLA: Coche utilitario deportivo (SUV). <br>
+    Clase GLK: Coche utilitario deportivo (SUV). <br>
+    Clase M: Coche utilitario deportivo (SUV). <br>
+    Clase R: Coche multipropósito (MPV). <br>
+    Clase S: Sedán de lujo. <br>
+    Clase SL: Roadster. <br>
+    Clase SLK: Roadster. <br>
+</p>
+
+    <div class="tabla">
+    <table>
+        <thead>
+          <tr class="trp">
+            <th>Modelo</th>
+            <th>Potencia</th>
+            <th>Año</th>
+            <th>Categoria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tr1">
+            <td>Clase A</td>
+            <td>120CV o 150CV</td>
+            <td>2023</td>
+            <td>Berlina</td>
+          </tr>
+          <tr class="tr2">
+            <td>Clase G</td>
+            <td>230CV o 310CV</td>
+            <td>2019</td>
+            <td>4X4</td>
+          </tr>
+          <tr class="tr1">
+            <td>AMG GTs</td>
+            <td>510CV o 690CV</td>
+            <td>2020</td>
+            <td>Super Deportivo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+
+
+<footer>
+
+</footer>
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

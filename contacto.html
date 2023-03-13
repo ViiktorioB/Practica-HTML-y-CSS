@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="style"/>
+    <link rel="icon" type="image/x-icon" href="Mercedes-Logo.svg.png">
+
+</head>
+
+<body>
+
+
+<header>
+    <div id="inicio">© 2023. Mercedes by Viktorio Burchin</div>
+</header>  
+
+
+<!-- Dentro del nav pondre las referencias del menu para levarnos a las otras sub paginas.-->
+<nav>
+    <ul class="menu">
+		<li id="logo"> <a href=index.html><img src="Mercedes-Logo.svg.png"></a></li>
+		<li> <a href=catalogo.html>Catalogo</a> </li>
+		<li> <a href=historia.html>Historia</a></li>
+		<li>  <a href=contacto.html>Contacto</a> </li>
+
+	</ul>
+</nav>
+
+<section>
+<div id="forms">
+    <form method="post">
+		<label for="nom">Nombre</label>
+		<input type="text" name="nom" placeholder="" required>
+        <label for="nom">Apellidos</label>
+		<input type="text" name="nom" placeholder="" required>
+
+
+		<label for="email">Email</label>
+		<input type="email" name="email" required><br>
+
+		<label for="password">ID vehiculo <span> *si dispones</span></label>
+		<input type="password" name="password" restricted>
+
+		<label for="opcions">Tipo de Consulta</label>
+		<select name="opcions">
+			<option value="opcio1">Consulta Telefonica</option>
+			<option value="opcio2">Información Renting</option>
+			<option value="opcio3">Consultar Financiación</option>
+            <option value="opcio4">Consulta Garantia</option>
+		</select>
+
+        <label for="comentari">Tema de Consulta</label>
+		<textarea name="comentari"></textarea>
+
+        <label class="label1" for="html">Mercedes-Benz</label><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label class="label1" for="css">AMG Sector</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label class="label1" for="javascript">AMG Petronas F1</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        
+		<input type="reset" value="Esborrar">
+		<input type="submit" value="Enviar">
+        
+	</form>
+</div>
+</section>
+
+
+<footer>
+
+</footer>
+
+
+
+</body>
+</html>

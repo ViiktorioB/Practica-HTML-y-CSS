@@ -1,0 +1,449 @@
+*{
+  font-family: 'Times New Roman', Times, serif
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+/* Cremaos la intro de la pagina con la infomracion del autor y la marca. */ 
+header{
+    width: 100vw;
+    height: 2vh;
+    background-color: #000000;
+    margin-bottom: 5px;
+    margin-top: none;
+}
+header #inicio{
+    color: #505050;
+    text-align: right;
+    margin-right: 20px;
+}
+/* Todo el tema del menu para acceder a las diferentes paginas se da aqui. */
+/* Utiliza los formatos de ViewPoint para que siemre que aparaza al principio esté escalado. */
+
+a{
+    display: inline-block; 
+    width: 10vw; 
+    height: 10vh;
+	  clear: center;
+    color: #bfbfbf;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+
+/* Utilizamos felx para la gestion de cada cuadro que ocupa el menu*/
+ul.menu {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 10vh;
+    line-height: 10vh;
+    position: static;
+    text-align: center;
+}
+ul.menu li {
+    position: static;
+    padding: 0 30px;
+    border-top: solid 1px #9a2525;
+    border-bottom:  solid 1px #9a2525;
+    width: 20vw;
+    transition: background-color 0.6s;
+}
+
+ul.menu li img{
+    margin-top: 1.5vh;
+    width: 5vw;
+    height: 7vh;
+    align-items: center;
+
+}
+ul.menu #logo{
+    position: static;
+    padding: 0 10px;
+    width: 10vw;
+    transition: background-color 0.6s;
+}
+ul.menu li:hover{
+    background-color: #1e1e1e;
+}
+
+/* Contenido de section */
+
+section{
+    background-image: url(mercedes-benz-a-klasse-2023.jpg);
+    background-repeat: no-repeat;
+    opacity: 60%;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-size: 100% 100%;
+}
+
+section #texto{
+    padding: 30px;
+    width: 20vw;
+    height: 120vh;
+    margin-right: 75px;
+    font: small-caps 100%/150% serif;
+    float: right;
+    font-size: 1.3em;
+}
+
+/* Menu deplegable que aparece en un div a la izq */
+.desplegable {
+    font-size: 1.3em;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+    position: relative;
+    float: left;
+  }
+
+.imgd{
+    margin-right: 80px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    float: left;
+  }
+  
+.desplegable:hover .dropdown-content {
+    display: block;
+  }
+   
+/* Pagina HTML CATALOGO */
+
+#bodycatalogo{
+    background: linear-gradient(rgb(0, 0, 0), rgb(62, 62, 62));
+}
+/* Estilo grid para la galeria de imagenes 1*/
+
+.cuadrados1 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    grid-column-gap: 5px;
+    margin-top: 30px;
+  }
+
+
+.fotos {
+    width: 10vw;
+    height: 10vh;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+.columna1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+/* Galeria dos */
+  .cuadrados2{
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-gap: 10px;
+    grid-column-gap: 5px;
+    margin-top: 30px;
+  }
+  
+  
+.fotos2 {
+    width: 20vw;
+    height: 15vh;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+.columna2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.desc{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/* Pgina HTML HISTORIA */
+
+/* Tendra una tabla con estilos diferentes por linea y la primera tambien.*/
+#bodyhistoria{
+    background-color: #ffffff;
+}
+
+.tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    color: #fff;
+    margin-left: 20vw;
+
+    animation-name: fade;
+    animation-duration: 5s; 
+  }
+
+  @keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  .tabla th {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: #ccc;
+  }
+  
+  .tr1 {
+    background-color: #a50000;
+  }
+  
+  .tr2 {
+    background-color: #000000;
+  }
+  
+td{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10px;
+}
+
+.textohistoria{
+    color: #a50000;
+    font-size: 1.3em;
+    width: 40vw;
+    height: 20vh;
+    margin-left: 30px;
+    animation-duration: 7s;
+    animation-name: an2;
+    animation-iteration-count: infinite;
+}
+
+@keyframes an2{
+    70% {
+        font-size: 150%;
+        margin-left: 10%;
+        width: 65%;
+      }
+}
+  
+
+/* HTML CONTACTO */
+/* Formulario de contatcto */
+
+#forms{
+  width: 15vw;
+  margin-left: 40vw;
+  padding-top: 40px;
+}
+
+span{
+  margin-left:70px;
+  font-size: .5em;
+  color: #ffffff;
+}
+label{
+  font-size: 1.2em;
+}
+
+.label1{
+  font-size: 1.1em;
+  color: #ccc;
+}
+input{
+  width: 100%;
+  padding: 4px 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+select{
+  width: 200px;
+  padding: 4px 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+textarea{
+  width: 400px;
+  padding: 4px 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  height: 40px;
+  color: #000000;
+}
+
+input[type=text] {
+  font-size: 0.9em;
+  width: 100%;
+  padding: 4px 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 200px;
+  padding: 4px 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+input:hover, textarea:hover, select:hover {
+	border: 2px solid rgb(255, 0, 0);
+}
+
+input:focus, textarea:focus, select:focus {
+	background-color: rgb(190, 60, 60);
+}
+
+input[type="reset"], input[type="submit"] {
+	padding: 5px;
+	background-color: #f21717;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	font-size: 1.1em;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+input[type="reset"]:hover, input[type="submit"]:hover {
+	background-color: #9b0101;
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERYS*/
+
+@media only screen and (max-width: 600px) {
+  a{
+    display: inline-block; 
+    width: 3vw; 
+    height: 3vh;
+	  clear: center;
+    color: #727272;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+
+ul.menu {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 10vh;
+    line-height: 10vh;
+    position: static;
+    text-align: center;
+}
+ul.menu li {
+    position: static;
+    padding: 0 30px;
+    border-top: solid 1px #ffffff;
+    border-bottom:  solid 1px #fefefe;
+    width: 20vw;
+    transition: background-color 0.6s;
+}
+
+ul.menu li img{
+    margin-top: 1.5vh;
+    width: 5vw;
+    height: 7vh;
+    align-items: center;
+
+}
+ul.menu #logo{
+    position: static;
+    padding: 0 10px;
+    width: 10vw;
+    transition: background-color 0.6s;
+}
+ul.menu li:hover{
+    background-color: #5e5d5d;
+}
+    
+}
+
+
+@media only screen and (min-width: 1200px) {
+  a{
+    display: inline-block; 
+    width: 10vw; 
+    height: 10vh;
+	  clear: center;
+    color: #bfbfbf;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+ul.menu {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 10vh;
+    line-height: 10vh;
+    position: static;
+    text-align: center;
+}
+ul.menu li {
+    position: static;
+    padding: 0 30px;
+    border-top: solid 1px #9a2525;
+    border-bottom:  solid 1px #9a2525;
+    width: 20vw;
+    transition: background-color 0.6s;
+}
+
+ul.menu li img{
+    margin-top: 1.5vh;
+    width: 5vw;
+    height: 7vh;
+    align-items: center;
+
+}
+ul.menu #logo{
+    position: static;
+    padding: 0 10px;
+    width: 10vw;
+    transition: background-color 0.6s;
+}
+ul.menu li:hover{
+    background-color: #1e1e1e;
+}
+}
